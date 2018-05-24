@@ -1,0 +1,10 @@
+<h1>To Do List</h1>
+<% @todos.each do |todo| %>
+  <ol>
+  <li><%= todo.item %></li>
+  </ol>
+  <%= link_to 'Show Page', todo_path(todo.id) %>
+  <% end %>
+  
+
+
