@@ -1,0 +1,9 @@
+<h2>Edit To Do List</h2>
+<fieldset>
+  <%= form_for @link do |f| %>
+  <%= f.text_field :item %>
+  <%= f.submit %>
+</fieldset>
+<p>
+<%= link_to 'Home', todos_path %>
+</p>
